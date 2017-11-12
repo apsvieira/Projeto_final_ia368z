@@ -1,3 +1,16 @@
+#Files due to the code at hand
+
+Tutorial_2/faces
+Tutorial_2/dataset
+
+Tutorial_2/gallery-dl
+
+Tutorial_2/images
+Tutorial_2/outputdir
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
