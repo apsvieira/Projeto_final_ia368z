@@ -2,6 +2,8 @@ Estamos aplicando o tutorial presente no site:
 
 https://github.com/jayleicn/animeGAN
 
+# AMANHÃ TESTAR A FUNÇÃO PARA ARRUMAR OS ERROS!
+
 # To-do list:
 
 * () - 1) Importante é conseguir extrair o paralelismo de GPU's, pois o treinamento total é muito grande.
