@@ -124,7 +124,7 @@ batch_size=81
 # In[11]:
 
 
-dataloader = tc.utils.data.DataLoader(dataset, batch_size=64, shuffle=True, num_workers=1)
+dataloader = tc.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=1)
 #126 classes
 
 
@@ -518,7 +518,7 @@ def train_our(num_epochs, dataloader, netD, netG, d_labelSmooth, outputDir,
 						model_option =1,binary = False, epoch_interval = 100,
 						D_steps = 3, G_steps = 1):
 	use_gpu = tc.cuda.is_available()
-	p'rint('Lets train!')
+	print('Lets train!')
 	#if (batch_size/D_steps is not 0):
 		#raise ValueError('Use batch_size multiple of D_steps')
 	for epoch in range(num_epochs):
@@ -535,14 +535,19 @@ def train_our(num_epochs, dataloader, netD, netG, d_labelSmooth, outputDir,
 			for z in range(D_steps):
 				if z > 3:
 					raise ValueError('KEEP IT LOW!')
-				#print('z', z) 
+			
 				############################
 				# (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
 				# 1A - Train the detective network in the Real Dataset
 				###########################
 				# train with real
 				netD.zero_grad()
-				real_cpu, _ = data
+				#real_cpu, _ = data
+				#print('ITALOS',data[0].size()[0])
+				start = z*(int(data[0].size()[0]/D_steps))
+				end = (z+1)*int(data[0].size()[0]/D_steps)
+				#real_cpu = data[0][z*(int(data[0].size()[0]/D_steps)):(z+1)*int(data[0].size()[0]/D_steps)]				
+				real_cpu = data[0][start:end]
 				if (epoch == 0 and z == 0 ):
 					vutils.save_image(real_cpu[0:64,:,:,:],
 					'%s/real_samples.png' % outputDir, nrow=8)
