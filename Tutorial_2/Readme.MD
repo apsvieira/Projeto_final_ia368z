@@ -4,6 +4,8 @@ https://github.com/jayleicn/animeGAN
 
 # AMANHÃ TESTAR A FUNÇÃO PARA ARRUMAR OS ERROS!
 
+# DIMINUIR O TEMPO DE 25 SEGUNDOS POR ÉPOCA!
+
 # To-do list:
 
 * () - 1) Importante é conseguir extrair o paralelismo de GPU's, pois o treinamento total é muito grande.
@@ -22,7 +24,9 @@ Não é importante no momento.
 
 Isso é muito importante, após arrumar a função e entender o opt.mode == 2, faremos isso.
 
+* () - 5) Ver se calcular o erro da média das evaluations do D (detective neural network) é válido usar algum conjunto de validação!
 
+* () - 6) Fazer gif com várias imagens
 # Currently doing:
 
 
