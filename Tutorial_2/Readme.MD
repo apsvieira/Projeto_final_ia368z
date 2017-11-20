@@ -28,6 +28,11 @@ Isso é muito importante, após arrumar a função e entender o opt.mode == 2, f
 
 Atualmente mudando a função de treino:
 
+() - Fazendo pasta sobre paper, com o codigo e comentário sobre o codigo!
+
+
+
+
 DONE - a) Melhorar o print, para ficar apenas em uma linha e não printar a cada batch;
 
 DONE - b) Implementar a questão de colocar dois laços dentro da mesma época e arrumar a questão de como calcular a MÉDIA;
