@@ -22,4 +22,8 @@
 * - 3) Um código com os mesmos parâmetros, mas com os kernels igual ao professor
 
 * - 4) Um código igual ao nosso, mas com o squeeze.  ** Primeiro vou ver se é necessário.
+
+## To-do-list:
+
+- Achei um erro gritante no que eu estava fazendo. A rede para deixar com 64,64 a imagem era meio estranha. Vou ver o jeito canônico de ir dividindo ao meio a figura. Para ir de 28 -> 14 -> 7 -> 4 -> 1!
        
