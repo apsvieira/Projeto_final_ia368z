@@ -1,0 +1,2 @@
+
+n classifier_argparse_teste.py --real_labelSmooth=0.1 --outputDir='outputdir_train_classifier_decay_0d010_label_0d10' --decay=${decay}
